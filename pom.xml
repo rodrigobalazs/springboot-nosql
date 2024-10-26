@@ -10,10 +10,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.rbalazs</groupId>
-	<artifactId>store-api</artifactId>
+	<artifactId>social-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>store-api</name>
-	<description>Store API</description>
+	<description>Social API</description>
 	<developers>
 		<developer>
 			<name>Rodrigo Balazs</name>

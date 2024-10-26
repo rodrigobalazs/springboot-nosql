@@ -7,7 +7,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- * Represents a given Post.
+ * Represents a given Post which is persisted in a NoSQL DB ( non-relational Database )
  *
  * @author Rodrigo Balazs
  */
