@@ -1,5 +1,6 @@
 package com.rbalazs.socialapi.controller;
 
+import com.rbalazs.socialapi.controller.swagger.PostControllerSwagger;
 import com.rbalazs.socialapi.model.Post;
 import com.rbalazs.socialapi.service.PostService;
 import org.slf4j.Logger;
@@ -12,12 +13,13 @@ import java.util.List;
 
 /**
  * Post REST Controller.
+ * API Documentation/Swagger at => http://<project_url>/swagger-ui/index.html
  *
  * @author Rodrigo Balazs
  */
 @RestController
 @RequestMapping("/post")
-public class PostController {
+public class PostController implements PostControllerSwagger {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PostController.class);
     private final PostService postService;

@@ -21,10 +21,12 @@
 	</developers>
 
 	<properties>
+		<apache-commons-collections.version>4.4</apache-commons-collections.version>
+		<apache-commons-lang.version>3.17.0</apache-commons-lang.version>
 		<java.version>17</java.version>
 		<lombok.version>1.18.34</lombok.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-		<spring-boot-starter-data-mongodb>3.3.4</spring-boot-starter-data-mongodb>
+		<springdoc-openapi.version>2.2.0</springdoc-openapi.version>
 	</properties>
 
 	<dependencies>
@@ -39,6 +41,26 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+
+		<!-- SpringDoc OpenAPI / Swagger -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>${springdoc-openapi.version}</version>
+		</dependency>
+
+		<!-- Apache Commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${apache-commons-lang.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>${apache-commons-collections.version}</version>
 		</dependency>
 
 		<!-- Lombok -->
