@@ -26,6 +26,8 @@
 		<java.version>17</java.version>
 		<lombok.version>1.18.34</lombok.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring-boot.version>3.3.4</spring-boot.version>
 		<springdoc-openapi.version>2.2.0</springdoc-openapi.version>
 	</properties>
 
@@ -35,12 +37,14 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring-boot.version}</version>
 		</dependency>
 
 		<!-- Spring Data MongoDB -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+			<version>${spring-boot.version}</version>
 		</dependency>
 
 		<!-- SpringDoc OpenAPI / Swagger -->
@@ -84,6 +88,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring-boot.version}</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
