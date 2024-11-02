@@ -30,12 +30,13 @@ mvn spring-boot:run;
 
 #### 1. Get all the available Posts =>
 ```
-curl -X GET http://localhost:8080/post/getPosts               -H 'accept: application/json';
+curl -X GET http://localhost:8080/post/getPosts  -H 'accept: application/json';
 ```
 
 #### 2. Retrieves a Post by Post Title ( post_title = "How to Boost Your Creativity" ) =>
 ```
-curl -X GET http://localhost:8080/post/title/How+to+Boost+Your+Creativity   -H 'accept: application/json';
+curl -X GET http://localhost:8080/post/title/How+to+Boost+Your+Creativity \
+    -H 'accept: application/json';
 ```
 
 #### 3. Deletes a Post by Post Title ( post_title = "Creative Writing Prompts" ) =>
@@ -50,7 +51,7 @@ curl -X POST http://localhost:8080/post  \
      -H 'Content-Type: application/json' -d \
 '{
     "title": "The Importance of Continuous Learning",
-    "content": "Embracing continuous learning can help you stay relevant and adaptable in a changing world."
+    "content": "Embracing continuous learning can help you stay adaptable in a changing world."
 }';
 ```
 
