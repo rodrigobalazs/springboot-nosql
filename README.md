@@ -51,7 +51,7 @@ curl -X POST http://localhost:8080/post  \
      -H 'Content-Type: application/json' -d \
 '{
     "title": "The Importance of Continuous Learning",
-    "content": "Embracing continuous learning can help you stay adaptable in a changing world."
+    "content": "continuous learning can help you stay adaptable in a changing world."
 }';
 ```
 
