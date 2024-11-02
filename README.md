@@ -35,12 +35,12 @@ curl -X GET http://localhost:8080/post/getPosts               -H 'accept: applic
 
 #### 2. Retrieves a Post by Post Title ( post_title = "How to Boost Your Creativity" ) =>
 ```
-curl -X GET http://localhost:8080/post/title/How%20to%20Boost%20Your%20Creativity   -H 'accept: application/json';
+curl -X GET http://localhost:8080/post/title/How+to+Boost+Your+Creativity   -H 'accept: application/json';
 ```
 
 #### 3. Deletes a Post by Post Title ( post_title = "Creative Writing Prompts" ) =>
 ```
-curl -X DELETE http://localhost:8080/post/title/Creative%20Writing%20Prompts;
+curl -X DELETE http://localhost:8080/post/title/Creative+Writing+Prompts;
 ```
 
 #### 4. Creates a new Post =>
