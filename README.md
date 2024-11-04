@@ -19,7 +19,7 @@ git clone https://github.com/rodrigobalazs/springboot-nosql.git;
 cd springboot-nosql;
 
 # starts a NoSQL MongoDB docker container
-docker run --name <container_name> -d -p 27017:27017 -v mongodb_data:/data/db mongo;
+docker run --name nosql_db -d -p 27017:27017 -v mongodb_data:/data/db mongo;
 
 # compile and start the spring boot server
 mvn clean install;
