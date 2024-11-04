@@ -25,8 +25,8 @@ public class Post {
     /**
      * Creates a new Post.
      *
-     * @param theTitle the post title, cannot be null nor empty.
-     * @param theContent the post content, cannot be null nor empty.
+     * @param theTitle the post title
+     * @param theContent the post content
      */
     public Post(final String theTitle, final String theContent) {
         Validate.notEmpty(theTitle, "The post title cannot be null nor empty");
