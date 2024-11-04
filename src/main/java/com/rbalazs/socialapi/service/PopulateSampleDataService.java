@@ -31,8 +31,8 @@ public class PopulateSampleDataService implements CommandLineRunner {
         }
 
         LOGGER.info("populates the NoSQL database with some initial sample data with Posts ..");
-        createPost(AppConstants.POST_BOOST_CREATIVITY, AppConstants.POST_BOOST_CREATIVITY_CONTENT);
-        createPost(AppConstants.POST_CREATIVE_WRITING, AppConstants.POST_CREATIVE_WRITING_CONTENT);
+        createPost(AppConstants.POST_BOOST_CREATIVITY_TITLE, AppConstants.POST_BOOST_CREATIVITY_CONTENT);
+        createPost(AppConstants.POST_CREATIVE_WRITING_TITLE, AppConstants.POST_CREATIVE_WRITING_CONTENT);
     }
 
     private Post createPost(String postTitle, String postContent){

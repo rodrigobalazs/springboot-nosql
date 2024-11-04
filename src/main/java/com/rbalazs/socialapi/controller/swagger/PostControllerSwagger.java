@@ -19,8 +19,6 @@ import java.util.List;
 /**
  * Swagger interface related to {@link PostController}.
  * API Documentation/Swagger at => http://<project_url>/swagger-ui/index.html
- *
- * @author Rodrigo Balazs
  */
 @Tag(name = "Post API", description = "API endpoints related to Posts")
 public interface PostControllerSwagger {
@@ -39,7 +37,7 @@ public interface PostControllerSwagger {
                     content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                             schema = @Schema(implementation = Post.class))})})
     public ResponseEntity<Post> getPostByTitle(
-            @Parameter(description = "post title", example = AppConstants.POST_BOOST_CREATIVITY, required = true)
+            @Parameter(description = "post title", example = AppConstants.POST_BOOST_CREATIVITY_TITLE, required = true)
             @PathVariable String title);
 
 
@@ -53,6 +51,6 @@ public interface PostControllerSwagger {
                     content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                             array = @ArraySchema(schema = @Schema(implementation = Void.class)))})})
     public ResponseEntity<Void> delete(
-            @Parameter(description = "post title to delete", example = AppConstants.POST_CREATIVE_WRITING, required = true)
+            @Parameter(description = "post title to delete", example = AppConstants.POST_CREATIVE_WRITING_TITLE, required = true)
             @PathVariable String title);
 }

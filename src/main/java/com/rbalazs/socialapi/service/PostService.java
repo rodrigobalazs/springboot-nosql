@@ -8,8 +8,6 @@ import java.util.List;
 
 /**
  * Post Service.
- *
- * @author Rodrigo Balazs
  */
 @Service
 public class PostService {
